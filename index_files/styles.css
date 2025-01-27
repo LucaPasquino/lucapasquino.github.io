@@ -74,7 +74,7 @@ a[role="button"] {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background: #343a40;  /* Dark background */
-    color: #0a1080;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
