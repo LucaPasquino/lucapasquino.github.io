@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0074)https://designergpt.replit.app/pages/db2b90d61491c426e8d5d0157ede7973.html -->
-<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Luca Pasquino - Curriculum</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index_files/styles.css">
     <script>
         function setLanguage(lang) {
@@ -16,54 +18,61 @@
     </script>
 </head>
 <body>
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>Luca Pasquino</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#about" data-it="Chi sono" data-en="About me">Chi sono</a></li>
-            <li><a href="#cv" data-it="Curriculum" data-en="Resume">Curriculum</a></li>
-            <li><a href="#contact" role="button" data-it="Contatti" data-en="Contact">Contatti</a></li>
-            <li>
-                <select onchange="setLanguage(this.value)">
-                    <option value="it">IT</option>
-                    <option value="en">EN</option>
-                </select>
-            </li>
-        </ul>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white" href="#">Luca Pasquino</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#about" data-it="Chi sono" data-en="About me">Chi sono</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#cv" data-it="Curriculum" data-en="Resume">Curriculum</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact" data-it="Contatti" data-en="Contact">Contatti</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <select class="form-control" onchange="setLanguage(this.value)">
+                        <option value="it">IT</option>
+                        <option value="en">EN</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <main class="container">
-        <div class="grid">
-            <section id="about">
-                <hgroup>
-                    <h2 data-it="Chi sono" data-en="About me">Chi sono</h2>
-                    <h3 data-it="Ingegnere gestionale e appassionato di fisica" data-en="Management Engineer and Physics Enthusiast">Ingegnere gestionale e appassionato di fisica</h3>
-                </hgroup>
+    <main class="container my-5">
+        <div class="row">
+            <section id="about" class="col-md-12">
+                <h2 data-it="Chi sono" data-en="About me" class="text-primary">Chi sono</h2>
+                <h3 data-it="Ingegnere gestionale e appassionato di fisica" data-en="Management Engineer and Physics Enthusiast">Ingegnere gestionale e appassionato di fisica</h3>
                 <p data-it="Ciao! Sono Luca Pasquino..." data-en="Hello! I am Luca Pasquino...">Ciao! Sono Luca Pasquino...</p>
-                <figure>
-                    <img src="profilo.jpg" alt="Foto profilo">
+                <figure class="text-center">
+                    <img src="profilo.jpg" alt="Foto profilo" class="rounded-circle img-thumbnail">
                     <figcaption data-it="Studiare è una delle mie più grandi passioni." data-en="Studying is one of my greatest passions.">Studiare è una delle mie più grandi passioni.</figcaption>
                 </figure>
             </section>
-            <section id="cv">
-                <h3 data-it="Scarica il mio curriculum" data-en="Download my resume">Scarica il mio curriculum</h3>
+            <section id="cv" class="col-md-12">
+                <h3 data-it="Scarica il mio curriculum" data-en="Download my resume" class="text-primary">Scarica il mio curriculum</h3>
                 <p data-it="Qui puoi scaricare il mio curriculum in formato PDF." data-en="Here you can download my resume in PDF format.">Qui puoi scaricare il mio curriculum in formato PDF.</p>
-                <a href="Curriculum.pdf" download="Curriculum - Pasquino Luca" role="button" data-it="Scarica il CV" data-en="Download CV">Scarica il CV</a>
+                <a href="Curriculum.pdf" download="Curriculum - Pasquino Luca" role="button" class="btn btn-primary" data-it="Scarica il CV" data-en="Download CV">Scarica il CV</a>
             </section>
-            <section id="contact">
-                <h3 data-it="Contattami" data-en="Contact me">Contattami</h3>
+            <section id="contact" class="col-md-12">
+                <h3 data-it="Contattami" data-en="Contact me" class="text-primary">Contattami</h3>
                 <p data-it="Per qualsiasi informazione, puoi contattarmi al numero: +39 392 134 0606." data-en="For any information, you can contact me at: +39 392 134 0606.">Per qualsiasi informazione, puoi contattarmi al numero: +39 392 134 0606.</p>
             </section>
         </div>
     </main>
-    <footer class="container">
+    <footer class="container-fluid bg-primary text-white text-center py-3">
         <small>
-            <a href="#about" data-it="Chi sono" data-en="About me">Chi sono</a> • 
-            <a href="#contact" data-it="Contatti" data-en="Contact">Contatti</a>
+            <a href="#about" class="text-white" data-it="Chi sono" data-en="About me">Chi sono</a> • 
+            <a href="#contact" class="text-white" data-it="Contatti" data-en="Contact">Contatti</a>
         </small>
     </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         setLanguage('it');
     </script>
-
-<iframe id="mKAhbQB5" frameborder="0" src="./index_files/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe><scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible; visibility: visible;"><template shadowrootmode="open"><div id="root-scribe-elem" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: rgb(15, 23, 42);"><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed bottom-auto right-0 top-0 z-[99999] flex max-h-screen w-[400px] max-w-full p-4"></ol></div></div><link rel="stylesheet" href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css"></template></scribe-shadow></body></html>
+</body>
+</html>
