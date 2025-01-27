@@ -1,44 +1,42 @@
-/* Generali */
+/* Importa PicoCSS */
+@import url('https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css');
+
+/* Personalizzazioni generali */
 :root {
-    --primary-color: #1e90ff;  /* Blu acceso */
-    --secondary-color: #f4f4f4; /* Grigio chiaro */
-    --text-color: #000;  /* Testo nero per migliore leggibilità */
-    --background-color: #ffffff; /* Sfondo bianco */
-    --font-family: 'Arial', sans-serif;
+    --pico-primary: #1e90ff;  /* Blu acceso */
+    --pico-secondary: #f4f4f4; /* Grigio chiaro */
+    --pico-font-family: 'Arial', sans-serif;
+    --pico-text-color: #000;  /* Testo nero */
+    --pico-background-color: #ffffff; /* Sfondo bianco */
 }
 
-/* Impostazioni globali */
+/* Generali */
 body {
-    font-family: var(--font-family);
-    color: var(--text-color);
-    background-color: var(--background-color);
+    font-family: var(--pico-font-family);
+    color: var(--pico-text-color);
+    background-color: var(--pico-background-color);
     margin: 0;
     padding: 0;
     line-height: 1.8;
 }
 
-/* Stile della navigazione */
-nav {
-    background: var(--primary-color);
-    color: #fff;
-    padding: 1.5rem 0;
+/* Navigazione */
+nav.container-fluid {
+    background: var(--pico-primary);
+    padding: 1rem 0;
     text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a, select {
+nav ul li a, nav ul li select {
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
@@ -48,16 +46,16 @@ nav ul li a, select {
     cursor: pointer;
 }
 
-nav ul li a:hover, select:hover {
+nav ul li a:hover {
     color: #ffeb3b;
 }
 
-/* Sezione principale */
+/* Contenitore principale */
 main.container {
     max-width: 900px;
     margin: 2rem auto;
     padding: 2rem;
-    background: var(--secondary-color);
+    background: var(--pico-secondary);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -69,7 +67,7 @@ section {
 }
 
 h2, h3 {
-    color: var(--primary-color);
+    color: var(--pico-primary);
 }
 
 p {
@@ -79,21 +77,21 @@ p {
 
 /* Immagine del profilo */
 figure {
-    margin: 2rem auto;
     text-align: center;
+    margin: 2rem 0;
 }
 
 figure img {
     max-width: 200px;
     height: auto;
     border-radius: 50%;
-    border: 4px solid var(--primary-color);
+    border: 4px solid var(--pico-primary);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 figcaption {
     font-style: italic;
-    color: var(--text-color);
+    color: var(--pico-text-color);
     margin-top: 0.5rem;
 }
 
@@ -101,7 +99,7 @@ figcaption {
 a[role="button"] {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: var(--primary-color);
+    background: var(--pico-primary);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -117,7 +115,7 @@ a[role="button"]:hover {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background: var(--primary-color);
+    background: var(--pico-primary);
     color: #fff;
     margin-top: 2rem;
 }
