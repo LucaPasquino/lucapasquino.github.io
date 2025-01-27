@@ -8,7 +8,7 @@ Ciao! Sono **Luca Pasquino**, un ragazzo italiano di 22 anni, laureato in **Inge
 ## 📄 Curriculum  
 Sul sito puoi trovare e scaricare il mio curriculum in formato PDF.  
 
-[Scarica il mio CV](curriculum.pdf)  
+[Scarica il mio CV](Curriculum.pdf)  
 
 ## 📚 Progetti  
 Ho collaborato alla scrittura di un paper intitolato **"Exploring Epidemiological Dynamics in a Social Dilemma"**, attualmente sotto revisione in *Frontiers in Big Data*.  
